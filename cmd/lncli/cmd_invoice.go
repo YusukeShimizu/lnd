@@ -57,7 +57,8 @@ var addInvoiceCommand = cli.Command{
 		cli.Int64Flag{
 			Name: "expiry",
 			Usage: "the invoice's expiry time in seconds. If not " +
-				"specified an expiry of 3600 seconds (1 hour) " +
+				"specified an expiry of " +
+				"86400 seconds (24 hour) " +
 				"is implied.",
 		},
 		cli.BoolFlag{
